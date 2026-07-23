@@ -1,12 +1,10 @@
-// src/views/signatureView.jsx
 import React from 'react';
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import SignatureScreen from 'react-native-signature-canvas';
 
 export default function SignatureView({ signatureRef, onOK, onEmpty, onClear, onSave }) {
-  // Estilização customizada injetada na WebView do canvas
-  const customStyle = `
-    .m-signature-pad {
+  const customStyle = 
+    `.m-signature-pad {
       box-shadow: none;
       border: none;
       background-color: #FFF;
@@ -17,8 +15,8 @@ export default function SignatureView({ signatureRef, onOK, onEmpty, onClear, on
     }
     .m-signature-pad--footer {
       display: none;
-    }
-  `;
+    }`
+  ;
 
   return (
     <View style={styles.container}>
